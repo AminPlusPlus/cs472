@@ -74,7 +74,7 @@ header{
     background: #4fb1ea; /* Old browsers */    
     background: linear-gradient(to bottom,  #4fb1ea 0%,#239fe5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */    
 }
-.logo{
+.header{
     font-size: 20px;
     font-weight: 500;
     float: left;
@@ -89,12 +89,22 @@ header{
     width: 50%;
     float: left;
 }
+.col-full{
+    width: 100%;
+    float: left;
+}
+.col-full::after {
+    display: block;
+    color: grey;
+    content: "Enter your fullname with goverment ID";
+  }
 .demo2.container{
     max-width: 1024px;
 }
-.demo2 .input.text input, .demo2 .input.select select, .demo2 .input.date input{
+/* .demo2 .input.text input, .demo2 .input.select select,
+ .demo2 .input.date input{
     width: 90%;
-}
+} */
 nav a{
     color: rgba(255,255,255,.9);
     text-decoration: none;
@@ -140,3 +150,13 @@ nav a:hover{
     border-radius: 4px;    
     margin-left: 15px; 
 }
+
+.radioGroup {
+    display: inline;
+}
+
+input.radio {
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
+  }

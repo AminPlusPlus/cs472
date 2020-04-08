@@ -1,0 +1,108 @@
+header{
+    padding: 10px 20px;
+    background-color: #267fd8;
+}
+section.form{
+    margin: 25px 0 45px;
+}
+header a.logo{
+    font-size: 24px;
+    font-weight: 500;
+    display: inline-block;
+    float: left;
+    margin-right: 50px;
+}
+.itemInfo .info-col::after{
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 12px;
+    height: 20px;
+    width: 1px;
+    background-color: goldenrod;
+}
+header a:hover{
+    text-decoration: none;
+}
+.container{
+    max-width: 800px;
+}
+
+.input{
+    margin: 0 0 20px;
+}
+.input input, .input select{
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 7px 15px;
+}
+.input label{
+    font-weight: 500;
+}
+.tip{
+    font-size: smaller;
+    color: gray;
+    font-style: italic;
+}
+.heading{
+    padding: 7px 10px;
+    border-radius: 5px 5px 0 0;
+}
+h2{
+    font-size: 28px;
+}
+
+#itemsList{
+    border:1px solid #ccc;
+    border-top:none;
+}
+.itemInfo{
+    padding:0 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.itemInfo .info-col{
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.rigth{
+    float: right;
+}
+#itemsList .itemInfo:last-child{
+    border-bottom: none;
+}
+.nav a{
+    color: #ffffff;
+    font-size: 18px;
+}
+.welcome{
+    margin-top: 80px;
+}
+.body-txt p img{
+    margin:10px;
+    float: right;
+}
+.label{
+    font-weight: 500;
+}
+.input.radio label{
+    font-weight: normal;
+}
+.input.radio input{
+    width: auto;
+    display: inline;
+    margin-right: 15px;
+}
+footer{
+    padding: 15px;
+    margin-top: 50px;
+    background-color:  #267fd8;
+}
+.btnsPos {
+    position: relative;
+    left: 20;
+}

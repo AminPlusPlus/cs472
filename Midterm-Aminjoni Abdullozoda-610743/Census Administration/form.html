@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The South West - Regional Office of Census Administrator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <header class="text-white navbar navbar-dark">
+        <a href="#" class="logo text-white">
+            The South West - Regional Census
+        </a>
+        <nav class="nav text-white">
+            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link" href="form.html">Census Form</a>
+        </nav>
+        <div class="rigth">
+            <div id="time"></div>
+        </div>
+    </header>
+    <div class="container">       
+        <section class="form">
+            <h1>Census Form</h1>
+            <form method="POST" id="myForm">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input text">
+                            <label for="fullName">*Full Name</label>
+                            <input type="text" name="fullName" id="fullName" minlength="2" required placeholder="Enter your Full Name" 
+                            pattern="^[a-zA-Z]+(([\'\,\.\-][a-zA-Z])?[a-zA-Z]*)*$" title="Name can be only letters. e.g: John B.Smith" />
+                            <div class="tip">Enter your Full Name as printed on your Government-issued ID</div>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input text">
+                            <label for="citizenId">*Citizen ID</label>
+                            <input type="text" name="citizenId" id="citizenId" placeholder="XXXXXXXXXX" required 
+                            pattern="\d{10}" title="Please enter valid Citizen ID. Format: XXXXXXXXXX" />
+                            <div class="tip">Enter your 10 Digit Citizen ID</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input text">
+                            <label for="ssn">*Social Security Number</label>
+                            <input type="text" name="ssn" id="ssn" placeholder="XXX-XX-XXXX" required 
+                            pattern="^\d{3}[-]\d{2}[-]\d{4}$" title="Please enter valid SSN. Format: XXX-XX-XXXX" />
+                            <div class="tip">Enter your Social Security Number (in the format shown)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input select">
+                            <label for="state">*State</label>
+                            <select name="state" id="state" required  >
+                                <option value="">Select state</option>
+                                <option value="Arizona">Arizona</option>
+                                <option value="New Mexico">New Mexico</option>
+                                <option value="Texas">Texas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input radio">
+                            <div class="label">*Senior Citizen?</div>
+                            <input type="radio" id="yes" name="senior" value="yes">
+                            <label for="yes">Yes</label>
+                            <input type="radio" id="no" name="senior" value="no">
+                            <label for="no">No</label>
+                        </div>
+                    </div>
+                </div>               
+               
+                <div class="btns btnsPos">
+                    <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>                   
+                </div>
+            </form>
+        </section>
+        <section class="list border-secondary">
+            <div id="itemsList">
+
+            </div>
+        </section>
+    </div>
+    <footer class="text-white">
+            <h3>Aminjoni Abdullozoda CS472</h3>
+    </footer>
+</body>
+</html>
