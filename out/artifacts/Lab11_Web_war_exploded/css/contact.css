@@ -1,0 +1,5 @@
+#emailForm:after {
+    content: 'Enter your full name.';
+    color: grey;
+    font-size: small;
+}
