@@ -15,7 +15,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">CSS 544::Assignment11</a>
+    <a class="navbar-brand" href="#">CSS 472::Assignment13</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,39 +40,44 @@
     </div>
 </nav>
 
+<div class="error-msg">
+    ${msg[0]!=null ? '<p>'.concat(msg[0]).concat('</p>') : ''}
+    ${msg[1]!=null ? '<p>'.concat(msg[1]).concat('</p>') : ''}
+    ${msg[2]!=null ? '<p>'.concat(msg[2]).concat('</p>') : ''}
+    ${msg[3]!=null ? '<p>'.concat(msg[3]).concat('</p>') : ''}
+</div>
 
-<form class="container">
+
+<form action="contact-form" method="POST" class="container">
     <div class="form-group" id="emailForm">
         <label for="exampleFormControlInput1">*Email address:</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
 
     <div class="form-group block">
         <label for="exampleFormControlInput1">*Gender:</label>
         <br/>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="male">
             <label class="form-check-label" for="inlineRadio1">Male</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="female">
             <label class="form-check-label" for="inlineRadio2">Female</label>
         </div>
     </div>
     <div class="form-group">
         <label for="exampleFormControlSelect1">*Category:</label>
-        <select class="form-control" id="exampleFormControlSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+        <select name="category" class="form-control" id="exampleFormControlSelect1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
         </select>
     </div>
 
     <div class="form-group">
-        <label for="exampleFormControlTextarea1">*Message:</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <label for="message">*Message:</label>
+        <textarea name="message" class="form-control" id="message" rows="3"></textarea>
     </div>
     <button type="submit" class="btn btn-primary container ">Submit</button>
 </form>
