@@ -1,0 +1,15 @@
+
+.topForm {
+    padding: 10px;
+}
+
+#isbnla:after{
+    content: "";
+    font-size: xx-small;
+}
+
+#overduegroup:after{
+    content: "Enter a valid decimal amount";
+    font-size: xx-small;
+    color: grey;
+}
