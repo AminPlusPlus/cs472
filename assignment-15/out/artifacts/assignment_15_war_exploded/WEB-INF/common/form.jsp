@@ -39,7 +39,6 @@
     </div>
     <div>
         <input type="reset" class="btn btn-warning">
-        <button onclick="bookPostService()">SUbmit</button>
         <input type="submit" class="btn btn-primary">
     </div>
 </form>
@@ -68,7 +67,6 @@
             alert('Saved new book successfully!');
             console.log(data)
         })
-
 
         function getValue(id) {
             return document.getElementById(id).value;
